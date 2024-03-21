@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: webhook-api
+Version: 0.1.0
+Summary: Tilda Webhook API
+Home-page: https://github.com/avalak-work/webhook-api
+License: MIT
+Keywords: python,watchdog,flask
+Platform: any
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: cached_property; python_version < "3.8"
+Requires-Dist: flask==2.2.*
+Requires-Dist: flask-cors
+Requires-Dist: flask_sqlalchemy==3.*
+Requires-Dist: requests[socks]
+Requires-Dist: psycopg2-binary
+Provides-Extra: gunicorn
+Requires-Dist: gunicorn; extra == "gunicorn"
+Provides-Extra: tests
+Requires-Dist: autopep8; extra == "tests"
+Requires-Dist: pytest; extra == "tests"
+Requires-Dist: pylint; extra == "tests"
+
+# Tilda webhook API
+
+[![python-unittests](https://github.com/mobjobcash/tilda-webhook-api/actions/workflows/python-unittests.yml/badge.svg)](https://github.com/mobjobcash/tilda-webhook-api/actions/workflows/python-unittests.yml)
+
+---
+
+## Requirements
+
+`python>=3.10`
+
+## API
+
+* `/api/v1/webhook` `POST`
+* `/api/v1/status` `POST`
+* `/api/v1/updateServices` `POST|auth`

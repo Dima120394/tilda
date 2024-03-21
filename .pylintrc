@@ -1,0 +1,9 @@
+# .pylintrc
+
+[TYPECHECK]
+generated-members=
+  app.logger,
+  db.session.add,
+  db.session.commit,
+  db.session.execute,
+  db.session.rollback
