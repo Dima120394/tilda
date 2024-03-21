@@ -9,7 +9,6 @@ __all__ = (
     'FxSMMSocProvider',
     'FxSMMSocAPI',
 )
-test = True
 
 from ..log import logger
 from .utils import retry_on_failure
